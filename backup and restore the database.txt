@@ -1,0 +1,13 @@
+start command prompt;
+
+
+C:\Users\Manish>cd C:\wamp\bin\mysql\mysql5.0.51b\bin
+backup: # mysqldump -u root -p[root_password] [database_name] > dumpfilename.sql
+mysqldump -u root -p  school> manish.sql
+
+
+
+create database school
+restore:# mysql -u root -p[root_password] [database_name] < dumpfilename.sql
+mysql -u root -p  school<manish.sql
+
